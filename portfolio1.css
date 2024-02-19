@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+ }
+
+ .nav{
+    background-color: rgb(27, 18, 46);
+    width: 100%;
+    
+ }
+ .nav a{
+    color: white; 
+    padding: 25px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+
+ }
+ .nav a:hover
+{
+    color: rgb(167, 100, 230);
+    font-size: 1.06rem;
+}
+.burger{
+    margin:20px 10px;
+    display: none;
+}
+.line{
+    width: 33px;
+    height: 4px;
+    margin: 5px 5px;
+   background-color: white;
+}
+.v-class{
+    display: flex;
+    flex-direction: column;
+}
+.firstsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftsection{
+        color: white;
+        line-height: 1.5;
+    
+}
+.leftsection >div{
+    font-size: 30px;
+    
+}
+.rightsection img{
+    width: 100%;
+}
+.leftsection1 img{
+    width: 70%;
+}
+.purple{
+    color: rgb(167, 100, 230);
+    font-size: 32px;
+}
+#element{
+    font-size: 32px;
+    color: rgb(167, 100, 230);
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(167, 100, 230);
+} 
+
+
+.purple1{
+    color: rgb(167, 100, 230);
+ }
+ .box{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(27, 18, 46);
+    border: 1px inset rgb(167, 100, 230) ;
+    
+ }
+ .box:hover{
+    box-shadow: 1px 1px 10px rgb(167, 100, 230);
+
+ }
+ .qual{
+    padding: 10px;
+ }
+ .year{
+    border-bottom: 1px ridge rgb(167, 100, 230) ;
+    width: 15%;
+ }
+ .year:hover{
+    color: blueviolet;
+ }
+ .desc{
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+ .subhead{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    
+ }
+ .logo{
+    margin-top: 40px;
+ }
+.skill-bar{
+    
+    width: 100%;
+    background: white;
+    height: 1.5%;
+    border-radius: 4px;
+    position: relative;
+}
+.skill-bar .skill-per{
+    position: absolute;
+    height: 100%;
+    background-color: blueviolet ;
+    animation: progress 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+}
+.desc{
+    margin-top: 20px;
+ }
+ .purple1{
+    color: rgb(167, 100, 230);
+ }
+ .col-6 h2{
+    text-align: center;
+ }
+ .fa-marg{
+    font-size: 15px;
+    margin-right: 10px;
+ }
+ .contact{
+    margin-top: 15px;
+ }
+ .txtwidth{
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    background-color: rgb(182, 182, 182);
+    border: none;
+    opacity: 0.5;
+    border-radius: 5px;
+ }
+ ::placeholder{
+    color: black;
+ }
+ .txtwidth1{
+    width: 100%;
+    margin-top: 24px;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(167, 100, 230); 
+    border-radius: 10px;
+    color: white;
+
+
+ }
+ .txtwidth1:hover{
+    
+    box-shadow: 0 0 5px rgb(167, 100, 230), 
+    0 0 25px  rgb(167, 100, 230); 
+    position: relative;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color:rgb(167, 100, 230); 
+    animation-timing-function: 1;
+ }
+
+@keyframes text{
+    from{
+        width: 0%;
+    }
+    to{
+       width: 100%;
+    }
+}
+ .work{
+    height: 100px;
+    font-size: 70px;
+    position: relative ;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+ }
+ .year1{
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    margin: 10px 0px;
+     }
+ .role{
+    font-size: 23px;
+    font-family: 'Josefin Sans';
+    color: rgb(167, 100, 230);
+ }
+ .desc1{
+    margin: 10px 0px;
+ }
+ ul li{
+    font-family: 'Josefin Sans';
+
+ }
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.html{
+    width: 90%;
+    animation-delay: 0.1s;
+}
+.css{
+    width: 70%;
+    animation-delay: 0.2s;
+}
+.javascript{
+    width: 30%;
+    animation-delay: 0.3s;
+}
+.Bootstrap{
+    width: 60%;
+    animation-delay: 0.4s;
+}
+.skill-per .tip{
+    position: absolute;
+    font-size: 9px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: rgb(37, 37, 37);
+    right: -14px;
+    top: -28px;
+    border-radius: 5px;
+}
+	/* Apply CSS properties to ui-widgets class */ 
+    .ui-widgets { 
+        position: relative; 
+        display: inline-block; 
+        width: 10rem; 
+        height: 10rem; 
+        border-radius: 9rem; 
+        margin: 1.5rem; 
+        border: 4px solid white; 
+        box-shadow: inset 0 0 7px grey; 
+        border-left-color: blueviolet; 
+        border-top-color:  blueviolet; 
+        border-right-color: white ; 
+        border-bottom-color: blueviolet; 
+        text-align: center; 
+        box-sizing: border-box; 
+    } 
+
+    /* Apply css properties to the second 
+        child of ui-widgets class */ 
+    .ui-widgets:nth-child(2) { 
+        border-top-color:  blueviolet; 
+        border-right-color: blueviolet;
+        border-left-color:  blueviolet; 
+        border-bottom-color: white; 
+        margin-top: 75px;
+    } 
+
+    /* Apply css properties to ui-widgets class 
+        and ui-values class*/ 
+    .ui-widgets .ui-values { 
+        top: 40px; 
+        position: absolute; 
+        left: 10px; 
+        right: 0; 
+        font-weight: 700; 
+        font-size: 2.0rem; 
+
+    } 
+
+    /* Apply css properties to ui-widgets 
+        class and ui-labels class*/ 
+    .ui-widgets .ui-labels {  
+        position: relative;
+        bottom: 40px;
+        text-shadow: 0 0 4px grey; 
+        width: 100%; 
+        font-size: 16px; 
+    } 
+
+
+@media only screen and (max-width: 900px){
+    .burger{
+        display: block;
+    }
+    .nav{
+        width: 100%;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .h-class{
+        height: 225px;
+    }
+    .rightsection{
+        margin-top: 65px;
+    }
+
+}
+@media only screen and (max-width: 770px){
+.leftsection1{
+    display: none;
+}
+.subhead{
+    margin-top: 40px;
+}
+}
+
